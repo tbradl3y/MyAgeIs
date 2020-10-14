@@ -17,13 +17,13 @@ class Main {
      currentYear++;
    }
    System.out.println ("your graduating class is "+ currentYear);
-
+   //prints out your graduating class
   }else if (age >= 18){ 
  //if you're younger than 15 no yearbook quote
   System.out.println("What's your yearbook quote?");
   String quote = scan.next();
   quote = quote + scan.nextLine();
-  System.out.println("Thank you "+ name + ", you are " + age + "years old");
+  System.out.println("Thank you "+ name + ", you are " + age + " years old");
   System.out.println("and your yearbook quote is " + quote);
   }
   }
