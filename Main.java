@@ -4,15 +4,22 @@ class Main {
   public static void main(String[] args) {
  
   Scanner scan = new Scanner(System.in);
- 
+  int currentYear = 2020;
   System.out.println("What's your first name?");
   String name = scan.next();
-  
+  // asking you to fill out your information
   System.out.println("Whats your age");
   int age = scan.nextInt();
-  if(age < 15 ){
+  if(age < 18 ){
      System.out.println("No yearbook quote");
-  }else if (age >= 15){ 
+   while (age < 18) {
+     age++;
+     currentYear++;
+   }
+   System.out.println ("your graduating class is "+ currentYear);
+
+  }else if (age >= 18){ 
+ //if you're younger than 15 no yearbook quote
   System.out.println("What's your yearbook quote?");
   String quote = scan.next();
   quote = quote + scan.nextLine();
