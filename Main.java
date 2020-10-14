@@ -8,7 +8,7 @@ class Main {
   System.out.println("What's your first name?");
   String name = scan.next();
   // asking you to fill out your information
-  System.out.println("Whats your age");
+  System.out.println(" Whats your age");
   int age = scan.nextInt();
   if(age < 18 ){
      System.out.println("No yearbook quote");
